@@ -71,16 +71,16 @@ El programa mostrará el menú principal del Sistema de Gestión TI.
 
 ## 8. Base de datos
 
-La aplicación utiliza MySQL para almacenar la información. El script SQL de la base de datos se incluirá en el repositorio para facilitar la creación de las tablas necesarias.
+El sistema utiliza MySQL para almacenar la información de clientes, productos, servicios técnicos, licencias, instalaciones y ventas.
 
-Antes de ejecutar el programa, verifico que MySQL esté funcionando y que la base de datos y las credenciales estén correctamente configuradas.
+El archivo `database.sql`, ubicado en la raíz del proyecto, contiene el script SQL para crear las tablas y sus relaciones.
 
-## 9. Repositorio
+### Pasos para configurar la base de datos
 
-Código fuente del proyecto:
+1. Abrir MySQL Workbench y conectarse al servidor MySQL.
+2. Abrir el archivo `database.sql`.
+3. Revisar el contenido antes de ejecutarlo, ya que incluye instrucciones que eliminan y recrean tablas existentes.
+4. Ejecutar el script para crear la estructura de la base de datos `gestion_ti`.
+5. Configurar las variables de conexión en el archivo `.env`, según la configuración local.
 
-https://github.com/dvidcontreras-design/GestionTI
-
-## 10. Estado del proyecto
-
-El sistema se encuentra en desarrollo. Los módulos se implementan, prueban y mejoran progresivamente como parte del proceso de formación académica.
+**Importante:** no publicar contraseñas reales ni compartir el archivo `.env`.
