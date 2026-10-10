@@ -1,3 +1,5 @@
+CREATE DATABASE IF NOT EXISTS gestion_ti;
+USE gestion_ti;
 -- MySQL dump 10.13  Distrib 8.0.46, for Win64 (x86_64)
 --
 -- Host: localhost    Database: gestion_ti
